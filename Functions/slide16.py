@@ -27,4 +27,10 @@ print("upper: {}, lower: {}".format(upper, lower))
 # ---------------------------------------
 
 def new_list(oldList):
-    
+    oldList = tuple(set(oldList))
+    return oldList
+
+t = (1, 1, 2, 3, 4, 5, 5)
+print(new_list(t))
+
+# ---------------------------------------
