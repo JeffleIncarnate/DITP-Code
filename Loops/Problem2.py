@@ -1,0 +1,1 @@
+list = [7, 5, 8, 6, 9]; print(len(list))
