@@ -34,3 +34,36 @@ t = (1, 1, 2, 3, 4, 5, 5)
 print(new_list(t))
 
 # ---------------------------------------
+
+num = 8
+prime = 0
+
+def isPrime():
+    global num, prime
+    n = 1
+    if num > 1:
+        while n <= num:
+            if num % n == 0:
+                prime += 1
+            n += 1
+        if prime == 2:
+            return True
+        else:
+            return False
+
+print(isPrime())
+
+# ---------------------------------------
+
+evenList = []
+evenOddList = [1, 2, 3, 4, 5, 6, 7, 7, 8, 8]
+
+def printEven(evenOddList):
+    for i in evenOddList:
+        if i % 2 == 0:
+            evenList.append(i)
+    return evenList
+
+print(printEven(evenOddList))
+
+# ---------------------------------------
