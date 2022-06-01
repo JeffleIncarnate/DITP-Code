@@ -35,7 +35,7 @@ print(new_list(t))
 
 # ---------------------------------------
 
-num = 8
+num = 9
 prime = 0
 
 def isPrime():
