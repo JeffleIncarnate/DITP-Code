@@ -15,10 +15,15 @@ str2 = "Programming"
 print(str1 + " " + str2)
 
 # Polymorphism with Classes
-class Cat:
+
+class Animal:
     def __init__(self, name, age):
         self.name = name
         self.age = age
+
+class Cat(Animal):
+    def __init__(self, name, age):
+        super().__init__(name, age)
 
     def info(self):
         print(f"I am a cat. My name is {self.name}. I am {self.age} years old.")
@@ -27,10 +32,9 @@ class Cat:
         print("Meow")
 
 
-class Dog:
+class Dog(Animal):
     def __init__(self, name, age):
-        self.name = name
-        self.age = age
+        super().__init__(name, age)
 
     def info(self):
         print(f"I am a dog. My name is {self.name}. I am {self.age} years old.")
@@ -46,5 +50,3 @@ for animal in (cat1, dog1):
     animal.make_sound()
     animal.info()
     animal.make_sound()
-
-# test
