@@ -8,6 +8,7 @@ class Music:
     def return_data(self):
         return f"{self.artist} - {self.title} - {self.duration}"
 
+
 m1 = Music("Will wood", "2econd 2ight 2eer", "100")
 
 for item in m1.__dict__:
