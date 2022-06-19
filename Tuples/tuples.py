@@ -20,5 +20,3 @@ print(thituple1item)
 # Looping through a tupple
 for i in mytuple:
     print(i)
-
-x
